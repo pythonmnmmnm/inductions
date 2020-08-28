@@ -1,0 +1,30 @@
+<!--/home/mnmmnm/django_projects/mysite/ads/templates/ads/comment_delete.html-->
+<!--
+{% extends "base_bootstrap.html" %}
+{% extends "base_menu.html" %}
+{% block content %}
+<h1>Delete Comment</h1>
+
+<p>Are you sure you want to delete</p>
+<p>{{ comment.text }}?</p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit"  class="btn btn-primary" value="Yes, delete.">
+  <a href="{% url 'ads:ad_detail' comment.ad.id %}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
+-->
+{% extends "base_menu.html" %}
+{% block content %}
+<h1>Delete Comment</h1>
+
+<p>Are you sure you want to delete</p>
+<p>{{ comment.text }}?</p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit"  class="btn btn-primary" value="Yes, delete.">
+  <a href="{% url 'ads:ad_detail' comment.ad.id %}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
