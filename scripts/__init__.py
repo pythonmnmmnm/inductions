@@ -1,0 +1,1 @@
+#/home/mnmmnm/django_projects/mysite/scripts/__init__.py

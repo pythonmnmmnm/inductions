@@ -1,0 +1,3 @@
+
+/home/mnmmnm/django_projects/mysite/site/hello.txt
+Hello World
